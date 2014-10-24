@@ -203,6 +203,13 @@
         </div><!-- comment the linebreak between these two elements because science
         -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
           <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
+          <!-- comment the linebreak between these two elements because science
+        --><squarespace:module-navigation template="module-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
+        --><div id="content" class="main-content" data-content-field="main-content">
+         {squarespace.main-content}
+        </div><!-- comment the linebreak between these two elements because science
+        -->{.section collection}{.collectionTypeNameEquals? blog}<aside id="rightSidebar" role="complementary">
+          <squarespace:block-field class="open-block-field" id="blogBlocks-{id}" columns="12" label="Blog Sidebar Content" />
         </aside>
         {.end}
         {.end}
