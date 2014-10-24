@@ -7,6 +7,7 @@ $(document).ready(function() {
         $(el).text('Modules')
       } else {
         $(el).text(index)
+        if (Number(module) === index) $(el).addClass('active-module')
       }
     })
   }
