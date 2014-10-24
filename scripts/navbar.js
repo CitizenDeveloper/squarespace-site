@@ -9,6 +9,5 @@ $(document).ready(function() {
         $(el).text(index)
       }
     })
-
   }
 })
