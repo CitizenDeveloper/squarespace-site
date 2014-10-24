@@ -4,7 +4,7 @@ $(document).ready(function() {
     var module = activity[1]
     $('#moduleNav ul li:first-child() a').each(function(index, el){
       if (index === 0) {
-        $(el).text('Modules')
+        $(el).html('<h2>MODULE</h2>')
       } else {
         $(el).text(index)
         if (Number(module) === index) $(el).addClass('active-module')
