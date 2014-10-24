@@ -197,8 +197,9 @@
           </nav>
         </div>{.end}{.end}<!-- comment the linebreak between these two elements because science
         -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
-        --><squarespace:folder-navigation template="folder-navigation" />
-        <squarespace:navigation navigationId="moduleNav" template="module-navigation">{.end}{.end}<!-- comment the linebreak between these two elements because science
+        -->
+        <squarespace:navigation navigationId="moduleNav" template="module-navigation" />
+        <squarespace:folder-navigation template="folder-navigation" />{.end}{.end}<!-- comment the linebreak between these two elements because science
         --><div id="content" class="main-content" data-content-field="main-content">
          {squarespace.main-content}
         </div><!-- comment the linebreak between these two elements because science
