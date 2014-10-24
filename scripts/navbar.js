@@ -10,7 +10,6 @@ $(document).ready(function() {
         if (Number(module) === index) $(el).addClass('active-module')
       }
     })
-  } else {
-    $('#moduleNav').hide()
+    $('#moduleNav').show()
   }
 })
