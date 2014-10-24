@@ -1,3 +1,7 @@
-#moduleNav {
+#moduleNav ul li {
+  display: inline;
+}
 
+#moduleNav {
+  margin-bottom: 25px;
 }
