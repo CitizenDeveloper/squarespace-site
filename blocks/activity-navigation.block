@@ -12,9 +12,12 @@
 
         {.folder?}
         <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}" id="id{collection.id}">
+          <a href="{collection.fullUrl}"></a>
           <input type="checkbox" name="folder-toggle-{collection.id}" id="folder-toggle-{collection.id}" class="folder-toggle-box hidden" />
           <label for="folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.fullUrl}">{collection.navigationTitle}</label>
-          <div class="subnav">
+        </div>
+        <div class="subnav">
+        {.if folderActive}
           {.repeated section items}
 
             {.collection?}
@@ -32,7 +35,7 @@
             </div>
             {.end}
           {.end}
-          </div>
+        {.end}
         </div>
         {.or}
 
