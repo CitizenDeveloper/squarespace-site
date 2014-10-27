@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#activityNav').show()
   }
   if (address.match(/module/)) {
-    var module = address.match(/module-(.*)/content/)[1]
+    var module = address.match(/module-(.*)\/content/)[1]
     $('a[href="/module-' + module + '/content"] label').css('color', 'black')
   }
 })
