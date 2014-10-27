@@ -1,4 +1,4 @@
-{.section items}<div id="activityNavWrapper" class="nav-wrapper" data-content-field="navigation-secondaryNav">
+{.section items}<!--<div id="activityNavWrapper" class="nav-wrapper" data-content-field="navigation-secondaryNav">-->
   <nav id="activityNav" class="activity-nav" data-content-field="navigation-secondaryNav">
     {.repeated section @}
       {.collection?}
@@ -64,5 +64,5 @@
 
     {.end}
   </nav>
-</div>{.end}
+<!--</div>-->{.end}
 

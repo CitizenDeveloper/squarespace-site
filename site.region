@@ -200,7 +200,6 @@
         -->{.collectionTypeNameEquals? page}<!-- comment the linebreak between these two elements because science
         -->
         <squarespace:navigation navigationId="activityNav" template="activity-navigation" />
-        <br>
         <!-- <squarespace:folder-navigation template="folder-navigation" /> -->{.end}{.end}<!-- comment the linebreak between these two elements because science
         --><div id="content" class="main-content" data-content-field="main-content">
          {squarespace.main-content}
