@@ -18,27 +18,27 @@
               <label for="folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.  fullUrl}">{collection.navigationTitle}</label>
             </div>
           </a>
-          <div class="subnav">
           {.if folderActive}
-            {.repeated section items}
+            <div class="subnav">
+              {.repeated section items}
 
-              {.collection?}
-              <div class="collection{.if active} active{.end}" id="id{collection.id}">
-                <a href="{collection.fullUrl}">
-                  <span>{collection.navigationTitle}</span>
-                </a>
-              </div>
+                {.collection?}
+                <div class="collection{.if active} active{.end}" id="id{collection.id}">
+                  <a href="{collection.fullUrl}">
+                    <span>{collection.navigationTitle}</span>
+                  </a>
+                </div>
+                {.end}
+                {.section externalLink}
+                <div class="external">
+                  <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                    <span>{title}</span>
+                  </a>
+                </div>
+                {.end}
               {.end}
-              {.section externalLink}
-              <div class="external">
-                <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                  <span>{title}</span>
-                </a>
-              </div>
-              {.end}
-            {.end}
+            </div>
           {.end}
-        </div>
         {.or}
 
           {.section collection}
