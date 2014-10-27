@@ -11,33 +11,33 @@
         {.or}
 
         {.folder?}
-        <a href="{collection.fullUrl}content">
-          <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}" id="id{collection.id}">
+          <a href="{collection.fullUrl}content">
+            <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}"   id="id{collection.id}">
 
-            <!-- <input type="checkbox" name="folder-toggle-{collection.id}" id="folder-toggle-{collection.id}" class="folder-toggle-box hidden" /> -->
-            <label for="folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.fullUrl}">{collection.navigationTitle}</label>
-          </div>
-        </a>
-        <div class="subnav">
-        {.if folderActive}
-          {.repeated section items}
+              <!-- <input type="checkbox" name="folder-toggle-{collection.id}" id="folder-toggle-{collection.id}"   class="folder-toggle-box hidden" /> -->
+              <label for="folder-toggle-{collection.id}" class="folder-toggle-label" onclick data-href="{collection.  fullUrl}">{collection.navigationTitle}</label>
+            </div>
+          </a>
+          <div class="subnav">
+          {.if folderActive}
+            {.repeated section items}
 
-            {.collection?}
-            <div class="collection{.if active} active{.end}" id="id{collection.id}">
-              <a href="{collection.fullUrl}">
-                <span>{collection.navigationTitle}</span>
-              </a>
-            </div>
-            {.end}
-            {.section externalLink}
-            <div class="external">
-              <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                <span>{title}</span>
-              </a>
-            </div>
+              {.collection?}
+              <div class="collection{.if active} active{.end}" id="id{collection.id}">
+                <a href="{collection.fullUrl}">
+                  <span>{collection.navigationTitle}</span>
+                </a>
+              </div>
+              {.end}
+              {.section externalLink}
+              <div class="external">
+                <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                  <span>{title}</span>
+                </a>
+              </div>
+              {.end}
             {.end}
           {.end}
-        {.end}
         </div>
         {.or}
 
