@@ -11,7 +11,7 @@
         {.or}
 
         {.folder?}
-          <a href="{collection.fullUrl}content" class="{.if folderActive} active{.end}{.if active} active{.end}">
+          <a href="{collection.fullUrl}content" class="{.section active} active{.end}">
             <div class="folder{.if folderActive} active{.end}{.section collection}{.if homepage} homepage{.end}{.end}"   id="id{collection.id}">
 
               <!-- <input type="checkbox" name="folder-toggle-{collection.id}" id="folder-toggle-{collection.id}"   class="folder-toggle-box hidden" /> -->
